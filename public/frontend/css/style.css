@@ -1,0 +1,779 @@
+@font-face {
+    font-family: 'gess';
+    src: url(../fonts/gess.otf);
+}
+@font-face {
+    font-family: 'tajawal';
+    src: url(../fonts/tajawal.ttf);
+}
+@font-face {
+    font-family: 'ArbFONTS-Ubuntu-Arabic_R' ;
+    src: url(../fonts/ArbFONTS-Ubuntu-Arabic_R.ttf);
+}
+
+reset
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td {
+	margin: 0;
+	padding: 0;
+	direction: rtl;
+}
+html{
+    height: 100%;
+}
+body {
+    font-family: 'ArbFONTS-Ubuntu-Arabic_R';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9b519;
+    /* background: linear-gradient(45deg, #f9b519,#e3a926,#f9b519,#f9b519, transparent); */
+}
+.content{
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+@media (min-width:320px) and (max-width:767px){
+    .content{
+        margin-left: 25px;
+        margin-right: 25px;
+
+    }
+}
+/* start navbar-sec */
+.navbar-light .navbar-toggler{
+    background-color: #bdbdbd;
+}
+.navbar-collapse{
+    text-align: center;
+}
+.navbar-sec ul {
+    margin: 0 auto;
+}
+.navbar-sec img{
+    width: 60px;
+    height: 60px;
+}
+.navbar-sec .nav-link{
+    color: white !important;
+    transition: 0.5s all ease-in-out;
+    font-size: 16px;
+}
+.navbar-sec .bg-light{
+background-color: #0d0c0b!important;
+}
+
+.nav-link:hover,
+.nav-link:focus{
+color: #d7b021 !important;
+font-weight: 600 !important;
+transition: 0.5s all ease-in-out;
+}
+
+/* end navbar-sec */
+/* start slider */
+.carousel-inner .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-inner .carousel-item {
+    height: 90vh;
+}
+.carousel-caption {
+    bottom: 28%;
+    right: 0;
+    left: 64%;
+}
+@media (min-width:768px) and (max-width:992px) {
+    .carousel-caption {
+        bottom: 20%;
+
+    }
+}
+.slider h5{
+    font-size: 30px;
+    color: #f9b519;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px #000000;
+    padding: 10px;
+}
+.slider p{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px;
+    color: white;
+    text-shadow: 0px 0px 10px #000000;
+}
+.slider button{
+    background: #f9b519;
+    border: 1px solid #f9b519;
+    border-radius: 30px;
+    width: 120px;
+    height: 41px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px #f9b519;
+    outline: none;
+}
+.slider button:focus,
+.slider  button:hover{
+    background-color: white;
+    color: #f9b519;
+    border: 1px solid #f9b519;
+    font-weight: 600;
+    transition: 0.5s all ease-in-out;
+}
+/* end slider */
+/* start fixed btn */
+@media (min-width: 320px) and (max-width: 573px) {
+    .float1{
+        width:50px !important;
+        height:50px !important;
+    }
+    .my-float1{
+        font-size: 20px !important;
+    }
+  }
+.my-float1{
+	margin-top:16px;
+}
+.float1{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:40px;
+	background-color:#5fa91c;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #5fa91c;
+  z-index:100;
+}
+.my-float1:hover, .my-float1:focus{
+    color: white;
+}
+
+.my-float1{
+    margin: 4px;
+    padding: 10px;
+    font-size: 28px;
+	/* margin-top:16px; */
+}
+/* end fixed btn */
+/* start about */
+.about {
+    background-color: #0d0c0b;
+}
+.about button{
+    background: #f9b519;
+    width: 133px;
+    box-shadow: 0px 0px 10px #f9b519;
+    height: 41px;
+    margin: 15px 0px;
+    border-radius: 21px;
+    border: 1px solid #f9b519;
+    font-size: 15px;
+    transition: 0.5s all ease-in-out;
+}
+.about button:hover,
+.about button:focus{
+    color: #f9b519;
+    font-weight: 600;
+    background: white;
+    transition: 0.5s all ease-in-out;
+}
+.about h5{
+    text-align: right;
+    color: #f9b519;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.about img{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    border: 5px solid #f9b519;
+    object-fit: cover;
+}
+.about p{
+    color: white;
+    text-align: right;
+    font-size: 14px;
+    line-height: 29px;
+}
+/* end about */
+/* start services */
+.services {
+    background-color: #0d0c0b;
+}
+.services h5{
+    text-align: center;
+    color: #f9b519;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.services .image-services {
+    position: relative;
+    width: 100%;
+  }
+
+  .services .image-services .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: 6px solid #f9b519;
+    border-radius: 16px;
+  }
+
+  .services .image-services .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .services .image-services:hover .image {
+    opacity: 0.3;
+  }
+
+  .services .image-services:hover .middle {
+    opacity: 1;
+  }
+
+  .services .image-services  .text  {
+    background-color: #ffffff;
+    color: #747474;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid #f9b519;
+    height: 50px;
+    width: 150px;
+  }
+  .services .image-services  .text  a{
+    color: #747474;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .services .image-services  .text  a:hover{
+      font-weight: 600;
+  }
+  .services button{
+    background: #f9b519;
+    width: 133px;
+    box-shadow: 0px 0px 10px #f9b519;
+    height: 41px;
+    margin: 15px 0px;
+    border-radius: 21px;
+    border: 1px solid #f9b519;
+    font-size: 15px;
+    transition: 0.5s all ease-in-out;
+    margin: 25px 0px;
+}
+.services  button:focus,
+.services  button:hover{
+    background-color: white;
+    color: #f9b519;
+    font-weight: 600;
+    transition: 0.5s all ease-in-out;
+}
+/* end services */
+/* start booking */
+.booking {
+    background-color: #0d0c0b;
+}
+.booking h5{
+    text-align: right;
+    color: #f9b519;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.booking p{
+    text-align: right;
+    font-size: 16px;
+    /* padding-bottom: 15px; */
+    padding-top: 11px;
+    color: #1c1c1c;
+    /* font-weight: 600; */
+}
+.booking .booking-row {
+    background: white;
+    border-radius: 13px;
+}
+.booking input{
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #dddddd;
+    outline: none;
+    margin: 10px 0px;
+}
+.booking input:focus,
+.booking textarea:focus{
+    border: 1px solid #ffe8b2;
+    box-shadow: 0px 0px 10px #f9b519;
+}
+.booking textarea{
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #dddddd;
+    outline: none;
+    margin: 10px 0px;
+}
+.booking input::placeholder,
+.booking textarea::placeholder{
+    font-size: 12px;
+    padding: 5px;
+    color: #b6b6b6;
+}
+.booking button{
+    width: 113px;
+    height: 33px;
+    border: 2px solid #f9b519;
+    background: #f9b519;
+    box-shadow: 0px 0px 10px #f9b519;
+    border-radius: 10px;
+    font-size: 13px;
+    color: white;
+    transition: 0.5s all ease-in-out;
+}
+.booking button:focus,
+.booking button:hover{
+    background-color: white;
+    color: #f9b519;
+    font-weight: 600;
+    transition: 0.5s all ease-in-out;
+}
+.booking img{
+    width: 100%;
+    padding: 15px;
+    border-radius: 26px;
+    height: 426px;
+    object-fit: cover;
+}
+/* end booking */
+/* start footer */
+
+.footer {
+    margin-top: auto !important;
+    background-color: #0d0c0b;
+}
+.footer img {
+    width: 100px;
+    height: 90px;
+}
+.footer p{
+    color: #ffffff;
+    padding: 20px 0px;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+}
+.footer .social{
+    color: white;
+    text-decoration: none;
+}
+.footer .social i{
+    font-size: 24px;
+    padding: 5px;
+}
+.footer h5{
+    color: #f9b519;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.footer ul li a i {
+    font-size: 15px;
+    padding: 5px;
+}
+.footer .line-2{
+    height: 2px;
+    background: #3c2c06;
+}
+/* end footer */
+/* start copyright */
+.copyright {
+    background-color: #0d0c0b;
+}
+.copyright p{
+    text-align: center;
+    color: #6f7070;
+    font-size: 11px;
+    padding-bottom: 16px;
+}
+/* end copyright */
+/* start contact */
+.contact {
+    background-color: #0d0c0b;
+}
+.contact  h5{
+    text-align: center;
+    color: #f9b519;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+
+.contact  input{
+    width: 100%;
+    height: 42px;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #dddddd;
+    outline: none;
+    margin: 10px 0px;
+}
+.contact  input:focus,
+.contact  textarea:focus{
+    border: 1px solid #ffe8b2;
+    box-shadow: 0px 0px 10px #f9b519;
+}
+.contact  textarea{
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #dddddd;
+    outline: none;
+    margin: 10px 0px;
+}
+.contact  input::placeholder,
+.contact  textarea::placeholder{
+    font-size: 12px;
+    padding: 5px;
+    color: #b6b6b6;
+}
+.contact  button{
+    width: 113px;
+    height: 33px;
+    border: 2px solid #f9b519;
+    background: #f9b519;
+    box-shadow: 0px 0px 10px #f9b519;
+    border-radius: 10px;
+    font-size: 13px;
+    color: white;
+    transition: 0.5s all ease-in-out;
+}
+.contact  button:focus,
+.contact  button:hover{
+    background-color: white;
+    color: #f9b519;
+    font-weight: 600;
+    transition: 0.5s all ease-in-out;
+}
+.contact h4{
+    color: #e5e5e5;
+    text-align: center;
+    font-size: 17px;
+    padding: 15px 0px;
+    font-weight: 600;
+}
+.contact .line-1{
+    background: #897445;
+    height: 2px;
+}
+.contact .day {
+    text-align: right;
+    padding: 15px;
+    color: #cfcfcf;
+    font-size: 16px;
+}
+.contact .time {
+    text-align: left;
+    padding: 15px;
+    color: #cfcfcf;
+    font-size: 16px;
+}
+/* end contact */
+/* start modal */
+.modal-header{
+    padding: 5px 20px;
+    border-bottom: none;
+}
+.modal-body h4{
+    font-size: 19px;
+    font-weight: 600;
+    color: #f3a900 !important;
+
+}
+.modal-body p{
+    padding: 10px;
+    font-size: 13px;
+    color: #7d7f81;
+}
+.modal-body input{
+    border: 1px solid #dddddd;
+    box-shadow: 0px 0px 10px #e5e5e5;
+    border-radius: 6px;
+    margin: 5px 2px;
+    height: 38px;
+}
+.modal-body input:hover,
+.modal-body input:focus{
+    box-shadow: 0px 0px 10px #f9b519;
+    border: 1px solid #f9b519;
+}
+.modal-body input::placeholder{
+    font-size: 12px;
+    color: #8b8b8b;
+    padding: 5px;
+}
+.modal-body  button{
+    width: 113px;
+    height: 33px;
+    border: 2px solid #f9b519;
+    background: #f9b519;
+    box-shadow: 0px 0px 10px #f9b519;
+    border-radius: 30px;
+    font-size: 13px;
+    color: white;
+    transition: 0.5s all ease-in-out;
+}
+.modal-body button:focus,
+.modal-body  button:hover{
+    background-color: white;
+    color: #f9b519;
+    font-weight: 600;
+    transition: 0.5s all ease-in-out;
+}
+/* end modal */
+/* start booking-sec */
+.booking-sec{
+    background-color: #0d0c0b;
+}
+.booking-sec h5{
+    color: #f9b519;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.booking-sec p{
+    color: #bdbdbd;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.form-sec-1{
+    display: flex;
+    justify-content: center;
+}
+.form-sec-1 .input-booking{
+    width: 75%;
+    height: 42px;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #dddddd;
+    outline: none;
+    margin: 10px 0px;
+}
+.form-sec-1 .input-date{
+    width: 36%;
+    height: 42px;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #dddddd;
+    outline: none;
+    margin: 10px 7px;
+}
+@media (min-width:320px) and (max-width:767px){
+    .form-sec-1 .input-booking,
+    .form-sec-1 .input-date{
+        width: 100%;
+        margin: 10px 0px;
+    }
+}
+.form-sec-1  input:focus{
+    border: 1px solid #ffe8b2;
+    box-shadow: 0px 0px 10px #f9b519;
+}
+
+.form-sec-1 input::placeholder{
+    font-size: 12px;
+    padding: 5px;
+    color: #b6b6b6;
+}
+.booking-sec button{
+    width: 150px;
+    height: 40px;
+    border: 2px solid #f9b519;
+    background: #f9b519;
+    box-shadow: 0px 0px 10px #f9b519;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    transition: 0.5s all ease-in-out;
+    margin: 15px 0px;
+}
+.booking-sec  button:focus,
+.booking-sec  button:hover{
+    background-color: white;
+    color: #f9b519;
+    font-weight: 600;
+    transition: 0.5s all ease-in-out;
+}
+/* end booking-sec */
+/* start profile */
+.profile-info{
+    background-color: #0d0c0b;
+}
+.profile-info .upload-image1 .upload-profile-pic {
+    display: flex;
+    justify-content: center;
+  }
+  .profile-info .upload-image1 .upload-profile-pic .profile-pic{
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #b3b3b3;
+    width: 100px;
+    height: 100px;
+
+  }
+  .profile-info .upload-image1 .upload-profile-pic .p-image i{
+    font-size: 20px;
+    color: #b3b3b3;
+    position: absolute;
+    z-index: 2;
+    padding: 3px;
+    margin: 72px -22px;
+  }
+  .profile-info  .upload-image1 .upload-profile-pic .p-image .file-upload{
+    position: relative;
+    display: none;
+  }
+  .profile-info  .form-sec-55{
+      display: flex;
+      justify-content: center;
+
+
+ }
+ .profile-info  .form-sec-55 input{
+    width: 75%;
+    height: 42px;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #dddddd;
+    outline: none;
+    margin: 10px 0px;
+}
+@media (min-width:320px) and (max-width:767px){
+    .profile-info  .form-sec-55 input{
+        width: 100%;
+        margin: 10px 0px;
+    }
+}
+.profile-info  .form-sec-55  input:focus{
+    border: 1px solid #ffe8b2;
+    box-shadow: 0px 0px 10px #f9b519;
+}
+
+.profile-info  .form-sec-55 input::placeholder{
+    font-size: 12px;
+    padding: 5px;
+    color: #b6b6b6;
+}
+.profile-info   .btn-send  .edit-btn{
+    width: 150px;
+    height: 40px;
+    border: 2px solid #f9b519;
+    background: #f9b519;
+    box-shadow: 0px 0px 10px #f9b519;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    transition: 0.5s all ease-in-out;
+    margin: 15px 0px;
+}
+.profile-info  .btn-send  .edit-btn:focus,
+.profile-info  .btn-send .edit-btn:hover{
+    background-color: white;
+    color: #f9b519;
+    font-weight: 600;
+    transition: 0.5s all ease-in-out;
+}
+.reviews-div .notification-containt img,
+.description-div .notification-containt img{
+    width: 115px;
+    height: 100px;
+    border-radius: 8px;
+    border: 2px solid #f9b519;
+    object-fit: cover;
+}
+.reviews-div .close-ads-sec1,
+.description-div .close-ads-sec1{
+    color: white;
+    background: none;
+    border: none;
+    float: left;
+}
+.reviews-div .notification-sec,
+.description-div .notification-sec{
+margin: 15px 0px;
+}
+.reviews-div h5,
+.description-div h5{
+    text-align: right;
+    padding: 5px 17px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+.reviews-div p,
+.description-div p{
+    text-align: right;
+    padding: 5px 17px;
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.tow-btns .reviews-buttons{
+    width: 150px;
+    height: 40px;
+    border: 2px solid #f9b519;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px #f9b519;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #f9b519;
+    transition: 0.5s all ease-in-out;
+    margin: 15px 0px;
+}
+.tow-btns .reviews-buttons:focus,
+.tow-btns .reviews-buttons:hover{
+    border: 2px solid #f9b519;
+    background: #f9b519;
+    box-shadow: 0px 0px 10px #f9b519;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s all ease-in-out;
+}
+
+/* end profile */
